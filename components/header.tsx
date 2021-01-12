@@ -1,14 +1,16 @@
-import Head from "next/Head";
-import Link from "next/link"
+import Link from 'next/link'
 
 const Header = () => {
     return (
-        <header className="header">
+        <header className="header" >
             <Link href="/">
-                <img src="/static/logo.svg" alt="" className="header__logo"/>
+                <img src="/static/logo.svg" alt="" className="header__logo" />
             </Link>
             <Link href="/">
                 <h1 className="header__title">FishCastle</h1>
+            </Link>
+            <Link href="/products">
+                <h2 className="header__title">Products</h2>
             </Link>
             <a className="header__summary snipcart-checkout snipcart-summary" href="#" style={{ textDecoration: "none" }}>
                 <span className="header__price snipcart-total-price"></span>
