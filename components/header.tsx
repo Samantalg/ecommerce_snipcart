@@ -1,3 +1,4 @@
+import Head from "next/Head";
 import Link from "next/link"
 
 const Header = () => {
