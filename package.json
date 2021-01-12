@@ -1,0 +1,28 @@
+{
+  "name": "next-commerce",
+  "version": "1.0.0",
+  "description": "e-commerce with SnipCart and NextJs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samanta Lara",
+  "license": "ISC",
+  "dependencies": {
+    "@types/next": "^9.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@zeit/next-sass": "^1.0.1",
+    "@zeit/next-typescript": "^1.1.1",
+    "next": "^10.0.5",
+    "node-sass": "^5.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10"
+  }
+}

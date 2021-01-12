@@ -1,0 +1,1 @@
+e-commerce with SnipCart and NextJs
