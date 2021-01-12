@@ -1,8 +1,10 @@
 const Footer = () => {
     return (
-        <div>
-            Footer
-        </div>
+        <footer className="footer">
+            <p>
+                Next.js app with <a href="https://snipcart.com">Snipcart</a>
+            </p>
+        </footer>
     );
 }
 
