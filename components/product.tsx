@@ -1,11 +1,13 @@
 import { withRouter } from 'next/router'
 import { IProductProps } from '../interfaces/productProps'
+import Link from 'next/link'
 
 const Product = (props: IProductProps) => {
-    console.log(props)
     return (
         <div className="product">
-            <h2 className="product__title">{props.product.name}</h2>
+            <Link href={`/product/${props.product.id}`}>
+                <h2 className="product__title">{props.product.name}</h2>
+            </Link>
             <p className="product__description">{props.product.description}</p>
             <img src={props.product.image} alt="" className="product__image" />
             <div className="product__price-button-container">

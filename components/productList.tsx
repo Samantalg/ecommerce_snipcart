@@ -1,10 +1,12 @@
+import { POINT_CONVERSION_UNCOMPRESSED } from 'constants'
 import { IProductListProps } from '../interfaces/productListProps'
 import Product from './product'
 
 const ProductList = (props: IProductListProps) => {
+  const { products } = props
   return (
     <div className="product-list">
-      {props.products.map((product, index) => <Product product={product} key={index}/>)}
+      {products.map((product, index) => <Product product={product} key={index} />)}
     </div>
   )
 }

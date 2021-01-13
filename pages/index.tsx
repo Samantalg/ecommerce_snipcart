@@ -6,6 +6,7 @@ import { IProductListProps } from '../interfaces/productListProps'
 import '../styless.scss'
 
 const Index = (props: IProductListProps) => {
+    console.log(props.products)
     return (
         <div className="app">
             <Head>
@@ -22,11 +23,9 @@ const Index = (props: IProductListProps) => {
 }
 
 Index.getInitialProps = async () => {
+    const data = await import('../api/data.json')
     return {
-        products: [
-            { id: "nextjs_halfmoon", name: "Halfmoon Betta", price: 25.00, image: "../static/halfmoon.jpg", description: "The Halfmoon betta is arguably one of the prettiest betta species. It is recognized by its large tail that can flare up to 180 degrees." } as IProduct,
-            { id: "nextjs_dragonscale", name: "Dragon Scale Betta", price: 35, image: "../static/dragonscale.jpg", description: "The dragon scale betta is a rarer and higher maintenance fish. It is named by its thick white scales covering his sides that looks like dragon scale armor." } as IProduct
-        ]
+        products:  data.products
     }
 }
 

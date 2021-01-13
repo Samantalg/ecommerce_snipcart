@@ -15,7 +15,7 @@ const Header = () => {
                     <img src="/static/logo.svg" alt="" className="header__logo" />
                 </Link>
                 <Link href="/">
-                    <h1 className="header__title">FishCastle</h1>
+                    <h2 className="header__title">Home</h2>
                 </Link>
                 <Link href="/products">
                     <h2 className="header__title">Products</h2>

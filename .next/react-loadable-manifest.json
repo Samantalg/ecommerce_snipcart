@@ -1,4 +1,16 @@
 {
+  "../../api/data.json": [
+    {
+      "id": "./api/data.json",
+      "file": "static/chunks/1.js"
+    }
+  ],
+  "../api/data.json": [
+    {
+      "id": "./api/data.json",
+      "file": "static/chunks/1.js"
+    }
+  ],
   "./dev/noop": [
     {
       "id": "./node_modules/next/dist/client/dev/noop.js",
