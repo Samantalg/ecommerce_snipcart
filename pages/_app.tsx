@@ -9,3 +9,7 @@ function Application({ Component, pageProps }) {
 }
 
 export default Application
+
+/* Application.getInitialProps = async (appContext) => ({ ...await App.getInitialProps(appContext) })
+
+export default appWithTranslation(Application) */

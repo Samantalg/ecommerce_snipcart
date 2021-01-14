@@ -1,5 +1,6 @@
 import React, { createContext, useContext } from 'react'
 import { useState, useEffect, useMemo } from 'react'
+
 const AppContext = createContext({})
 
 export const AppWrapper = ({ children }) => {
@@ -10,10 +11,11 @@ export const AppWrapper = ({ children }) => {
         "image": "",
         "description": ""
     }]
+
     const [productsState, setProductsState] = useState(initialState)
     useEffect(() => {
         async function loadData() {
-            const response = await import('../api/data.json')
+            const response = await import('../public/api/data.json')
             const products = response.products
             console.log('state', products)
             setProductsState(products)

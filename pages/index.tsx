@@ -8,7 +8,7 @@ const Index = () => {
                 <main className="main">
                     <h1 className="title">Aquarium</h1>
                     <img src="static/aquarium.jpg" alt="Aquarium" className="image" />
-                    <Link href="/products">
+                    <Link href="/products">{ }
                         <h2>Go to the store</h2>
                     </Link>
                 </main>

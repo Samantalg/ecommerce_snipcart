@@ -1,13 +1,71 @@
 (window["webpackJsonp_N_E"] = window["webpackJsonp_N_E"] || []).push([[0],{
 
-/***/ "./api/data.json":
-/*!***********************!*\
-  !*** ./api/data.json ***!
-  \***********************/
-/*! exports provided: products, default */
-/***/ (function(module) {
+/***/ "./node_modules/next/dist/client/dev/noop.js":
+/*!***************************************************!*\
+  !*** ./node_modules/next/dist/client/dev/noop.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = JSON.parse("{\"products\":[{\"id\":1,\"name\":\"Halfmoon Betta\",\"price\":25,\"image\":\"../static/halfmoon.jpg\",\"description\":\"The Halfmoon betta is arguably one of the prettiest betta species. It is recognized by its large tail that can flare up to 180 degrees.\"},{\"id\":2,\"name\":\"Dragon Scale Betta\",\"price\":35,\"image\":\"../static/dragonscale.jpg\",\"description\":\"The dragon scale betta is a rarer and higher maintenance fish. It is named by its thick white scales covering his sides that looks like dragon scale armor.\"},{\"id\":3,\"name\":\"Dragon Scale Betta\",\"price\":15,\"image\":\"../static/fish1.jpg\",\"description\":\"The dragon scale betta is a rarer and higher maintenance fish. It is named by its thick white scales covering his sides that looks like dragon scale armor.\"},{\"id\":4,\"name\":\"Dragon Scale Betta\",\"price\":20,\"image\":\"../static/fish2.jpg\",\"description\":\"The dragon scale betta is a rarer and higher maintenance fish. It is named by its thick white scales covering his sides that looks like dragon scale armor.\"},{\"id\":5,\"name\":\"Dragon Scale Betta\",\"price\":30,\"image\":\"../static/fish3.jpg\",\"description\":\"The dragon scale betta is a rarer and higher maintenance fish. It is named by its thick white scales covering his sides that looks like dragon scale armor.\"},{\"id\":6,\"name\":\"Dragon Scale Betta\",\"price\":10,\"image\":\"../static/fish4.jpg\",\"description\":\"The dragon scale betta is a rarer and higher maintenance fish. It is named by its thick white scales covering his sides that looks like dragon scale armor.\"}]}");
+"use strict";
+/* WEBPACK VAR INJECTION */(function(module) {
+
+;
+    var _a, _b;
+    // Legacy CSS implementations will `eval` browser code in a Node.js context
+    // to extract CSS. For backwards compatibility, we need to check we're in a
+    // browser context before continuing.
+    if (typeof self !== 'undefined' &&
+        // AMP / No-JS mode does not inject these helpers:
+        '$RefreshHelpers$' in self) {
+        var currentExports = module.__proto__.exports;
+        var prevExports = (_b = (_a = module.hot.data) === null || _a === void 0 ? void 0 : _a.prevExports) !== null && _b !== void 0 ? _b : null;
+        // This cannot happen in MainTemplate because the exports mismatch between
+        // templating and execution.
+        self.$RefreshHelpers$.registerExportsForReactRefresh(currentExports, module.i);
+        // A module can be accepted automatically based on its exports, e.g. when
+        // it is a Refresh Boundary.
+        if (self.$RefreshHelpers$.isReactRefreshBoundary(currentExports)) {
+            // Save the previous exports on update so we can compare the boundary
+            // signatures.
+            module.hot.dispose(function (data) {
+                data.prevExports = currentExports;
+            });
+            // Unconditionally accept an update to this module, we'll check if it's
+            // still a Refresh Boundary later.
+            module.hot.accept();
+            // This field is set when the previous version of this module was a
+            // Refresh Boundary, letting us know we need to check for invalidation or
+            // enqueue an update.
+            if (prevExports !== null) {
+                // A boundary can become ineligible if its exports are incompatible
+                // with the previous exports.
+                //
+                // For example, if you add/remove/change exports, we'll want to
+                // re-execute the importing modules, and force those components to
+                // re-render. Similarly, if you convert a class component to a
+                // function, we want to invalidate the boundary.
+                if (self.$RefreshHelpers$.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)) {
+                    module.hot.invalidate();
+                }
+                else {
+                    self.$RefreshHelpers$.scheduleUpdate();
+                }
+            }
+        }
+        else {
+            // Since we just executed the code for the module, it's possible that the
+            // new exports made it ineligible for being a boundary.
+            // We only care about the case when we were _previously_ a boundary,
+            // because we already accepted this update (accidental side effect).
+            var isNoLongerABoundary = prevExports !== null;
+            if (isNoLongerABoundary) {
+                module.hot.invalidate();
+            }
+        }
+    }
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
 
 /***/ })
 
