@@ -1,32 +1,20 @@
 import Layout from '../components/layout'
-import ProductList from '../components/productList'
-import { useAppContext } from '../context/state'
-import { useEffect } from 'react'
-import { IProduct } from '../interfaces/product'
-import { IProductListProps } from '../interfaces/productListProps'
-import '../styless.scss'
+import Link from 'next/link'
 
 const Index = () => {
-    const productsState = useAppContext();
-    console.log('index', productsState)
-    if (productsState.length === 1) {
-        return <h1>Loading...</h1>
-    }
-
     return (
         <div className="app">
             <Layout>
-                <ProductList products={productsState} />
+                <main className="main">
+                    <h1 className="title">Aquarium</h1>
+                    <img src="static/aquarium.jpg" alt="Aquarium" className="image" />
+                    <Link href="/products">
+                        <h2>Go to the store</h2>
+                    </Link>
+                </main>
             </Layout>
         </div>
     )
 }
-
-/* Index.getInitialProps = async () => {
-    const data = await import('../api/data.json')
-    return {
-        products: data.products
-    }
-} */
 
 export default Index

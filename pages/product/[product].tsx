@@ -1,32 +1,17 @@
-import { useState, useEffect } from 'react'
 import Layout from '../../components/layout'
 import Product from '../../components/product'
+import { useAppContext } from '../../context/state'
 
 const ProductPage = ({ params }) => {
+    const productsState = useAppContext()
     const index = parseInt(params) - 1
-
-    const [product, setProduct] = useState({
-        "id": 0,
-        "name": "",
-        "price": 0.00,
-        "image": "",
-        "description": ""
-    })
-
-    useEffect(() => {
-        async function loadData() {
-            const response = await import('../../api/data.json')
-            const product = await response.products[index]
-            setProduct(product)
-        }
-
-        loadData()
-    }, [])
-
+    const product = productsState[index]
     return (
-        <Layout>
-            <Product product={product} />
-        </Layout>
+        <div className="app">
+            <Layout>
+                <Product product={product} />
+            </Layout>
+        </div>
     )
 }
 

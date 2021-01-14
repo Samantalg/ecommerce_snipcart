@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from 'react';
+import React, { createContext, useContext } from 'react'
 import { useState, useEffect, useMemo } from 'react'
 const AppContext = createContext({})
 
@@ -14,7 +14,7 @@ export const AppWrapper = ({ children }) => {
     useEffect(() => {
         async function loadData() {
             const response = await import('../api/data.json')
-            const products = await response.products
+            const products = response.products
             console.log('state', products)
             setProductsState(products)
         }
@@ -36,11 +36,5 @@ export const AppWrapper = ({ children }) => {
 
 
 export function useAppContext() {
-    const context = useContext(AppContext);
-
-    if (!context) {
-        console.error('Error deploying App Context!!!');
-    }
-
-    return context;
+    return useContext(AppContext)
 }

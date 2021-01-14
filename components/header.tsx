@@ -10,7 +10,6 @@ const Header = () => {
                 <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
             </Head>
             <header className="header" >
-
                 <Link href="/">
                     <img src="/static/logo.svg" alt="" className="header__logo" />
                 </Link>

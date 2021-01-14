@@ -1,10 +1,11 @@
-import { FC } from "react";
-import Footer from "./footer";
-import Header from "./header";
+import { FC } from 'react'
+import Footer from './footer'
+import Header from './header'
+import '../styless.scss'
 
 const Layout: FC = (props) => {
     return (
-        <div>
+        <div className="layout">
             <Header />
             <main>
                 {props.children}
@@ -14,4 +15,4 @@ const Layout: FC = (props) => {
     );
 }
 
-export default Layout;
+export default Layout

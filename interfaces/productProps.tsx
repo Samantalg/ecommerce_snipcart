@@ -1,4 +1,4 @@
-import { IProduct } from "./product"
+import { IProduct } from './product'
 import { Router } from 'next/router'
 
 export interface IProductProps {

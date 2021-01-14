@@ -1,13 +1,20 @@
-import Layout from "../components/layout";
+import Layout from '../components/layout'
+import ProductList from '../components/productList'
+import { useAppContext } from '../context/state'
 
-const Products = () => {
+const Products = () => {const productsState = useAppContext();
+    console.log('index', productsState)
+    if (productsState.length === 1) {
+        return <h1>Loading...</h1>
+    }
+
     return (
-        <Layout>
-            <main>
-                Here will be the PLP
-            </main>
-        </Layout>
-    );
+        <div className="app">
+            <Layout>
+                <ProductList products={productsState} />
+            </Layout>
+        </div>
+    )
 }
 
 export default Products;

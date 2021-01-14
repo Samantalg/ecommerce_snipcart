@@ -1,4 +1,3 @@
-import { POINT_CONVERSION_UNCOMPRESSED } from 'constants'
 import { IProductListProps } from '../interfaces/productListProps'
 import Product from './product'
 
