@@ -1,7 +1,6 @@
-import { IProductListProps } from '../interfaces/productListProps'
 import Product from './product'
 
-const ProductList = (props: IProductListProps) => {
+const ProductList = (props) => {
   const { products } = props
   return (
     <div className="product-list">
