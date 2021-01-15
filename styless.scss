@@ -305,15 +305,23 @@ body {
 .footer {
   color: white;
   background: linear-gradient(90deg, #707070 0%, #474747 100%);
+  display: flex;
+  justify-content: row;
+  
   &__left {
     margin-left: auto;
   }
 
+  &__right {
+    margin: auto;
+  }
+
   a {
     color: white;
+    margin-left: 7px;
+    cursor: pointer;
   }
   p {
-    display: flex;
     margin: 0;
     @include centered;
     padding-top: 20px;

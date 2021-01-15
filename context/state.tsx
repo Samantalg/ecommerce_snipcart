@@ -36,7 +36,6 @@ export const AppWrapper = ({ children }) => {
     );
 }
 
-
 export function useAppContext() {
     return useContext(AppContext)
 }

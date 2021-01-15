@@ -1,4 +1,5 @@
 import { AppWrapper } from '../context/state'
+import '../i18n' // needs to be bundled
 
 function Application({ Component, pageProps }) {
     return (
@@ -9,7 +10,3 @@ function Application({ Component, pageProps }) {
 }
 
 export default Application
-
-/* Application.getInitialProps = async (appContext) => ({ ...await App.getInitialProps(appContext) })
-
-export default appWithTranslation(Application) */

@@ -1,8 +1,10 @@
 import { withRouter } from 'next/router'
 import { IProductProps } from '../interfaces/productProps'
 import Link from 'next/link'
+import { useTranslation } from 'react-i18next'
 
 const Product = (props: IProductProps) => {
+    const { t } = useTranslation()
     return (
         <div className="product">
             <Link href={`/product/${props.product.id}`}>
@@ -19,10 +21,11 @@ const Product = (props: IProductProps) => {
                     data-item-price={props.product.price}
                     data-item-url={props.router.pathname}
                     data-item-image={props.product.image}>
-                    Add to cart
-        </button>
+                    {t('add_cart')}
+                </button>
             </div>
         </div>
     )
 }
 export default withRouter(Product)
+// withRouter?

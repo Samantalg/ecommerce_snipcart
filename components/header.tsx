@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import { withTranslation } from 'react-i18next'
 
-const Header = () => {
+const Header = ({ t }) => {
     return (
         <>
             <Head>
@@ -14,10 +15,10 @@ const Header = () => {
                     <img src="/static/logo.svg" alt="" className="header__logo" />
                 </Link>
                 <Link href="/">
-                    <h2 className="header__title">Home</h2>
+                    <h2 className="header__title">{t('home')}</h2>
                 </Link>
                 <Link href="/products">
-                    <h2 className="header__title">Products</h2>
+                    <h2 className="header__title">{t('products')}</h2>
                 </Link>
                 <a className="header__summary snipcart-checkout snipcart-summary" href="#" style={{ textDecoration: "none" }}>
                     <span className="header__price snipcart-total-price"></span>
@@ -27,4 +28,4 @@ const Header = () => {
     );
 }
 
-export default Header
+export default withTranslation()(Header)
