@@ -1,5 +1,6 @@
 import translationEN from './public/locales/en/common.json'
 import translationES from './public/locales/es/common.json'
+import productsEN from './public/api/data.json'
 import { initReactI18next } from 'react-i18next'
 import i18n from "i18next"
 
