@@ -3,12 +3,13 @@ import Link from 'next/link'
 import { withTranslation } from 'react-i18next/'
 
 const Index = ({ t }) => {
+
     return (
         <div className="app">
             <Layout>
                 <main className="main">
-                    <h1 className="title">{t('aquarium')}</h1>
-                    <img src="static/aquarium.jpg" alt={t('aquarium')} className="image" />
+                    <h1 className="title">{t('shop')}</h1>
+                    <img src="static/home.jpg" alt={t('shop')} className="image" />
                     <Link href="/products">{ }
                         <h2>{t('home_message')}</h2>
                     </Link>

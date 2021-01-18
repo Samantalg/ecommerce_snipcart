@@ -3,9 +3,9 @@ import Product from '../../components/product'
 import { useAppContext } from '../../context/state'
 
 const ProductPage = ({ params }) => {
-    const productsState = useAppContext()
+    const context = useAppContext()
     const index = parseInt(params) - 1
-    const product = productsState[index]
+    const product = context[index]
     return (
         <div className="app">
             <Layout>

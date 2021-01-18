@@ -1,9 +1,11 @@
 {
-  "aquarium": "Acuario",
+  "shop": "Floristería",
   "home": "Inicio",
+  "catalogue": "Catálogo",
   "products": "Productos",
   "home_message": "Visita la tienda",
   "footer": "Next.js app creada con",
+  "footer2": "y fotos de Pexels",
   "add_cart": "Añadir al carrito",
   "loading": "Cargando..."
 }

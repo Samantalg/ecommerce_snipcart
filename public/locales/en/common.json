@@ -1,9 +1,11 @@
 {
-  "aquarium": "Aquarium",
+  "shop": "Flower shop",
   "home": "Home",
+  "catalogue": "Catalogue",
   "products": "Products",
   "home_message": "Go to the store",
   "footer": "Next.js app with",
+  "footer2": "and pictures from Pexels",
   "add_cart": "Add to cart",
   "loading": "Loading..."
 }

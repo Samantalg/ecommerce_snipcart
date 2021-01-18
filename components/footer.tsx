@@ -9,7 +9,7 @@ const Footer = ({ t }) => {
     return (
         <footer className="footer">
             <p>
-                {t('footer')} <a href="https://snipcart.com">Snipcart</a>
+                {t('footer')} <a href="https://snipcart.com">Snipcart</a> {t('footer2')}
             </p>
             <div className="footer__right">
                 <a onClick={() => changeLanguage('es')}>ES</a>

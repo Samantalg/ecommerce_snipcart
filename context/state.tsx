@@ -1,5 +1,6 @@
 import React, { createContext, useContext } from 'react'
 import { useState, useEffect, useMemo } from 'react'
+import { fetchEntries } from '../utils/contentfulApi'
 
 const AppContext = createContext({})
 
@@ -9,19 +10,32 @@ export const AppWrapper = ({ children }) => {
         "name": "",
         "price": 0.00,
         "image": "",
-        "description": ""
+        "description": "",
+        "nameEs": "",
+        "descriptionEs": "",
     }]
 
     const [productsState, setProductsState] = useState(initialState)
+    
     useEffect(() => {
         async function loadData() {
-            const response = await import('../public/api/data.json')
-            const products = response.products
-            console.log('state', products)
-            setProductsState(products)
+            const res = await fetchEntries()
+            const catalogue = await res.map((item) => {
+                return {
+                    id: item.fields.id,
+                    name: item.fields.name,
+                    nameEs: item.fields.nameEs,
+                    price: item.fields.price.toFixed(2),
+                    description: item.fields.description,
+                    descriptionEs: item.fields.descriptionEs,
+                    image: item.fields.image.fields.file.url
+                }
+            })
+            console.log('cat: ', catalogue)
+            setProductsState(catalogue)
         }
         loadData()
-    }, initialState);
+    }, []);
 
     const values = useMemo(() => (
         {
@@ -33,7 +47,7 @@ export const AppWrapper = ({ children }) => {
         <AppContext.Provider value={values.productsState}>
             {children}
         </AppContext.Provider>
-    );
+    )
 }
 
 export function useAppContext() {

@@ -18,7 +18,7 @@ const Header = ({ t }) => {
                     <h2 className="header__title">{t('home')}</h2>
                 </Link>
                 <Link href="/products">
-                    <h2 className="header__title">{t('products')}</h2>
+                    <h2 className="header__title">{t('catalogue')}</h2>
                 </Link>
                 <a className="header__summary snipcart-checkout snipcart-summary" href="#" style={{ textDecoration: "none" }}>
                     <span className="header__price snipcart-total-price"></span>
