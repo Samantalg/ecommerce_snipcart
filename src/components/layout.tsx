@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import Footer from './footer'
 import Header from './header'
-import '../styless.scss'
+import '../../styless.scss'
 
 const Layout: FC = (props) => {
     return (

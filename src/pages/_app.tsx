@@ -1,5 +1,5 @@
 import { AppWrapper } from '../context/state'
-import '../i18n' // needs to be bundled
+import '../../i18n' // needs to be bundled
 
 function Application({ Component, pageProps }) {
     return (

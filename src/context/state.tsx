@@ -16,7 +16,7 @@ export const AppWrapper = ({ children }) => {
     }]
 
     const [productsState, setProductsState] = useState(initialState)
-    
+
     useEffect(() => {
         async function loadData() {
             const res = await fetchEntries()
@@ -31,7 +31,7 @@ export const AppWrapper = ({ children }) => {
                     image: item.fields.image.fields.file.url
                 }
             })
-            console.log('cat: ', catalogue)
+            catalogue.sort((a, b) => a.id - b.id)
             setProductsState(catalogue)
         }
         loadData()
